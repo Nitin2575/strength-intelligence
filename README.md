@@ -134,6 +134,6 @@ The project also explores how sleep quality, temperature, and the physical sleep
 
 This extension connects the project to a broader product question:
 
-> How can connected health data and hardware-informed signals improve recovery and training decisions?
+How can connected health data and hardware-informed signals improve recovery and training decisions?
 
-See [`15_Sleep_Environment`](./15_Sleep_Environment/) for the product brief, experiment ideas, system flow, and example recommendations.
+
