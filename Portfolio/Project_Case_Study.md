@@ -66,6 +66,6 @@ flowchart LR
 
 The most useful product is not the one with the most data. It is the one that helps the user understand what matters and make a better decision.
 
-## How I Would Explain It in an Interview
+## How I Would Explain It
 
 > I treated Strength Intelligence like a small product team rather than a coding exercise. I started with a user problem, defined measurable outcomes, designed the data model, wrote the analysis, translated the findings into product recommendations, and built a frontend that makes those recommendations understandable.
