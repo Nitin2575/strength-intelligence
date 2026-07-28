@@ -2,7 +2,7 @@
 
 ## Why This Problem Matters to Me
 
-Strength Intelligence is not a random portfolio concept.
+Strength Intelligence is not a random concept or project.
 
 It comes directly from how I currently manage my own training and health.
 
