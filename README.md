@@ -65,6 +65,29 @@ The goal is to explore how disconnected health and workout data can be turned in
 3. Transparent recommendations
 4. Better questions for future research
 
+Phase 1: 
+- Problem framing
+- Data audit
+- Product requirements
+- Prototype UI
+- Measurement framework
+
+Phase 2:
+- Workout logging system
+- Structured Notion database
+- Apple Health import
+- Initial analytics
+
+Phase 3:
+- Longitudinal analysis
+- Insight validation
+- Recommendation engine
+
+Phase 4:
+- User testing
+- Additional data sources
+- AI evaluation
+
 ## Project Flow
 
 ```mermaid
@@ -163,9 +186,9 @@ The current project has several limitations:
 
 These limitations are part of the project, not something I want to hide.
 
-## Current Status
+## Current Status & Next Iteration
 
-This repository is a working product case study and experiment. It includes real product thinking, example queries, starter analysis code, system diagrams, frontend specifications, and an honest record of assumptions and limitations.
+This repository is intentionally built in public. Rather than generating synthetic long-term results, each iteration reflects real product development, real data collection, and continuous refinement of the measurement system.
 
 Below is a current mobile interface prototype and UI/UX direction. Currently still in development and planning. This serves as a rough idea of how a future established app would look and feel for this intended purpose.
 
