@@ -15,7 +15,7 @@ I have trained consistently for years and already collect useful information acr
 My current data comes from:
 
 - **Apple Health**, which includes sleep, steps, heart rate, activity, body weight, and nutrition data imported from connected apps
-- **My workout journal**, where I record exercises, sets, reps, weight, effort, and session notes
+- **My workout journal**, where I would record exercises, sets, reps, weight, effort, and session notes (currently not updated nor available)
 
 The problem is that these sources remain disconnected.
 
@@ -102,8 +102,8 @@ flowchart LR
 - Fueling
 - Session Analysis
 - Insights
-- Methodology
-- Sleep and Environment Intelligence
+  
+
 
 ## Example Insight
 
@@ -153,6 +153,9 @@ The current project has several limitations:
 
 - It begins with one primary user: me
 - Some data is self-reported
+- Strength workouts were recorded inconsistently in a note-based journal
+- Exercise, set, repetition, load, and effort data are not complete enough for reliable longitudinal conclusions
+- Historical health signals cannot be used to claim strength progression without a consistent performance outcome
 - Personal patterns may not generalize to other people
 - Observational relationships do not prove causation
 - AI-generated explanations can be wrong
@@ -175,14 +178,5 @@ Below is a current mobile interface prototype and UI/UX direction. Currently sti
 <img width="477" height="849" alt="Screenshot 2026-07-29 at 1 25 48 PM" src="https://github.com/user-attachments/assets/e68cb8f9-bf4f-4c4b-8792-1984c0fea45c" />
 
 <img width="472" height="895" alt="image" src="https://github.com/user-attachments/assets/4576cf11-c984-42f9-b31a-a90753d8598c" />
-
-
-## Sleep and Environment Future Extension
-
-The project also explores how sleep quality, temperature, and the physical sleep environment may affect next-day resistance-training performance.
-
-This extension connects the project to a broader product question:
-
-How can connected health data and hardware-informed signals improve recovery and training decisions?
 
 
