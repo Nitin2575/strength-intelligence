@@ -1,4 +1,4 @@
-# Strength Intelligence MkII — Project Case Study
+# Strength Intelligence — Project Case Study
 
 ## One-Sentence Summary
 
