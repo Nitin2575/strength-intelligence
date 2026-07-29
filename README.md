@@ -14,14 +14,14 @@ Strength Intelligence is organized as a living product case study. Each document
 
 | Document | Description |
 |---|---|
-| [Project Case Study](./case-study/PROJECT_CASE_STUDY.md) | Recruiter-facing overview of the problem, approach, current progress, limitations, and lessons learned. |
-| [Product Vision](./vision/VISION.md) | Long-term product direction, intended user experience, and future capabilities. |
-| [Product Requirements](./product/PRD.md) | Product goals, user needs, requirements, success metrics, and scope. |
+| [Case Study](./Portfolio/Project_Case_Study.md) | Overview of the problem, approach, current progress, limitations, and lessons learned. |
+| [Product Vision](./Vision/Product_Vision.md) | Long-term product direction, intended user experience, and future capabilities. |
+| [Product Requirements](./Product/Product_Requirements.md) | Product goals, user needs, requirements, success metrics, and scope. |
 | [Measurement Framework](./analytics/MEASUREMENT_FRAMEWORK.md) | Primary outcomes, supporting metrics, guardrails, and measurement logic. |
-| [Data Model](./data/DATA_MODEL.md) | Proposed entities, relationships, schemas, and data definitions. |
-| [Analytics](./analytics/ANALYTICS.md) | Planned SQL, Python, longitudinal analyses, and experiment concepts. |
-| [AI Framework](./ai/AI_FRAMEWORK.md) | Recommendation logic, context design, uncertainty handling, and AI evaluation. |
-| [Research](./research/RESEARCH.md) | Supporting evidence, research questions, assumptions, and limitations. |
+| [Data Model](./Data/Data_Model.md) | Proposed entities, relationships, schemas, and data definitions. |
+| [Analytics](./Product/ProductAnalytics/KPI_Framework.md) | Planned SQL, Python, longitudinal analyses, and experiment concepts. |
+| [AI Framework](./Ai/Recommendation_Logic.md) | Recommendation logic, context design, uncertainty handling, and AI evaluation. |
+| [Research](./Research/Research_Plan.md) | Supporting evidence, research questions, assumptions, and limitations. |
 | [Design](./design/DESIGN.md) | Interface direction, information architecture, and product interaction decisions. |
 | [Roadmap](./ROADMAP.md) | Current phase, planned milestones, and future iterations. |
 
