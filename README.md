@@ -21,10 +21,10 @@ The problem is that these sources remain disconnected.
 
 I may know that I slept less, ate fewer carbohydrates, walked more than usual, and had a weaker workout. But I still have to decide:
 
-Which factors actually mattered?
-Is this a real pattern or a one-time event?
-Should I progress, repeat, or adjust the next session?
-What should I test next?
+- Which factors actually mattered?
+- Is this a real pattern or a one-time event?
+- Should I progress, repeat, or adjust the next session?
+- What should I test next?
 
 My journal tells me what happened in the gym. Apple Health gives me context about sleep, activity, recovery, and nutrition. I still have to manually decide whether those signals affected my performance.
 
