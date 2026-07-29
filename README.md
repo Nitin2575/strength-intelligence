@@ -18,12 +18,11 @@ Strength Intelligence is organized as a living product case study. Each document
 | [Product Vision](./Vision/Product_Vision.md) | Long-term product direction, intended user experience, and future capabilities. |
 | [Product Requirements](./Product/Product%20Strategy/Product_Requirements.md) | Product goals, user needs, requirements, success metrics, and scope. |
 | [Measurement Framework](./analytics/MEASUREMENT_FRAMEWORK.md) | Primary outcomes, supporting metrics, guardrails, and measurement logic. |
-| [Data Model](./Data/Data_Model.md) | Proposed entities, relationships, schemas, and data definitions. |
-| [Analytics](./Product/ProductAnalytics/KPI_Framework.md) | Planned SQL, Python, longitudinal analyses, and experiment concepts. |
-| [AI Framework](./Ai/Recommendation_Logic.md) | Recommendation logic, context design, uncertainty handling, and AI evaluation. |
-| [Research](./Research/Research_Plan.md) | Supporting evidence, research questions, assumptions, and limitations. |
-| [Design](./design/DESIGN.md) | Interface direction, information architecture, and product interaction decisions. |
-| [Roadmap](./ROADMAP.md) | Current phase, planned milestones, and future iterations. |
+| [Data Model](./Technical/Data/Data_Model.md) | Proposed entities, relationships, schemas, and data definitions. |
+| [Analytics](./Product/Product%20Analytics/KPI_Framework.md) | Planned SQL, Python, longitudinal analyses, and experiment concepts. |
+| [AI Framework](./Technical/Ai/Recommendation_Logic.md) | Recommendation logic, context design, uncertainty handling, and AI evaluation. |
+| [Research](./Research/Research/Research_Plan.md) | Supporting evidence, research questions, assumptions, and limitations. |
+| [Design](./Product/Product%20Design/Information_Architecture.md) | Interface direction, information architecture, and product interaction decisions. |
 
 ## Why I Built This
 
