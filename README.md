@@ -105,6 +105,36 @@ flowchart LR
 - Methodology
 - Sleep and Environment Intelligence
 
+## Example Insight
+
+Imagine that a lower-body workout performs below its recent baseline.
+
+A normal workout tracker may only show the completed exercises, sets, reps, and weight.
+
+Strength Intelligence adds context:
+
+```mermaid
+flowchart LR
+    A[Shorter Sleep] --> E[Session Context]
+    B[Higher Daily Activity] --> E
+    C[Lower Carbohydrate Intake] --> E
+    D[Recent Training Load] --> E
+    E --> F[Below-Baseline Performance]
+    F --> G[Repeat Weight and Test Fueling]
+```
+
+The product might explain:
+
+Performance was below your recent baseline. This session followed shorter sleep, higher activity, and a longer period without food. These factors may have contributed, but one session does not prove causation.
+
+It could then recommend:
+
+Repeat the planned weight next session and test a carbohydrate-containing meal 60–120 minutes before training.
+
+The goal is not to present the recommendation as a fact.
+
+The goal is to turn the available evidence into a reasonable next test.
+
 ## AI Learning Focus
 
 This project gives me a structured way to experiment with:
@@ -132,7 +162,7 @@ These limitations are part of the project, not something I want to hide.
 
 ## Current Status
 
-This repository is a working product case study and learning environment. It includes real product thinking, example queries, starter analysis code, system diagrams, frontend specifications, and an honest record of assumptions and limitations.
+This repository is a working product case study and experiment. It includes real product thinking, example queries, starter analysis code, system diagrams, frontend specifications, and an honest record of assumptions and limitations.
 
 
 ## Sleep and Environment Extension
