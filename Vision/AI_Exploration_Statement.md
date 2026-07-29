@@ -2,7 +2,7 @@
 
 ## Project Purpose
 
-Strength Intelligence MkII is an educational and exploratory project.
+Strength Intelligence is an educational and exploratory project.
 
 It is intended to help me learn how AI can be applied responsibly to a real health and performance problem.
 
