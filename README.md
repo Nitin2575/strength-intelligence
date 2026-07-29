@@ -17,7 +17,7 @@ Strength Intelligence is organized as a living product case study. Each document
 | [Case Study](./Portfolio/Project_Case_Study.md) | Overview of the problem, approach, current progress, limitations, and lessons learned. |
 | [Product Vision](./Vision/Product_Vision.md) | Long-term product direction, intended user experience, and future capabilities. |
 | [Product Requirements](./Product/Product%20Strategy/Product_Requirements.md) | Product goals, user needs, requirements, success metrics, and scope. |
-| [Measurement Framework](./analytics/MEASUREMENT_FRAMEWORK.md) | Primary outcomes, supporting metrics, guardrails, and measurement logic. |
+| [Measurement Framework](.Product/Product%20Analytics/KPI_Framework.md) | Primary outcomes, supporting metrics, guardrails, and measurement logic. |
 | [Data Model](./Technical/Data/Data_Model.md) | Proposed entities, relationships, schemas, and data definitions. |
 | [Analytics](./Product/Product%20Analytics/KPI_Framework.md) | Planned SQL, Python, longitudinal analyses, and experiment concepts. |
 | [AI Framework](./Technical/AI/Recommendation_Logic.md) | Recommendation logic, context design, uncertainty handling, and AI evaluation. |
