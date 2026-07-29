@@ -1,6 +1,6 @@
 # Strength Intelligence MkII
 
-Strength Intelligence MkII is an **AI exploration and learning project** focused on strength and resistance training.
+Strength Intelligence MkII is an **AI exploration project** focused on strength and resistance training.
 
 I am building it to learn how AI, product analytics, health data, and frontend development can be used toward a real personal health goal:
 
@@ -18,6 +18,13 @@ My current data comes from:
 - **My workout journal**, where I record exercises, sets, reps, weight, effort, and session notes
 
 The problem is that these sources remain disconnected.
+
+I may know that I slept less, ate fewer carbohydrates, walked more than usual, and had a weaker workout. But I still have to decide:
+
+Which factors actually mattered?
+Is this a real pattern or a one-time event?
+Should I progress, repeat, or adjust the next session?
+What should I test next?
 
 My journal tells me what happened in the gym. Apple Health gives me context about sleep, activity, recovery, and nutrition. I still have to manually decide whether those signals affected my performance.
 
