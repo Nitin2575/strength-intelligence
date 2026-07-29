@@ -8,6 +8,23 @@ I am building it to learn how AI, product analytics, health data, and frontend d
 
 This is not presented as a finished medical product, a validated coaching system, or a replacement for professional guidance. It is a transparent experiment in applying AI and data analysis to a problem I genuinely care about.
 
+## Repository Guide
+
+Strength Intelligence is organized as a living product case study. Each document explores a different part of the product, research, analytics, and system design.
+
+| Document | Description |
+|---|---|
+| [Project Case Study](./case-study/PROJECT_CASE_STUDY.md) | Recruiter-facing overview of the problem, approach, current progress, limitations, and lessons learned. |
+| [Product Vision](./vision/VISION.md) | Long-term product direction, intended user experience, and future capabilities. |
+| [Product Requirements](./product/PRD.md) | Product goals, user needs, requirements, success metrics, and scope. |
+| [Measurement Framework](./analytics/MEASUREMENT_FRAMEWORK.md) | Primary outcomes, supporting metrics, guardrails, and measurement logic. |
+| [Data Model](./data/DATA_MODEL.md) | Proposed entities, relationships, schemas, and data definitions. |
+| [Analytics](./analytics/ANALYTICS.md) | Planned SQL, Python, longitudinal analyses, and experiment concepts. |
+| [AI Framework](./ai/AI_FRAMEWORK.md) | Recommendation logic, context design, uncertainty handling, and AI evaluation. |
+| [Research](./research/RESEARCH.md) | Supporting evidence, research questions, assumptions, and limitations. |
+| [Design](./design/DESIGN.md) | Interface direction, information architecture, and product interaction decisions. |
+| [Roadmap](./ROADMAP.md) | Current phase, planned milestones, and future iterations. |
+
 ## Why I Built This
 
 I have trained consistently for years and already collect useful information across different tools.
