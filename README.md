@@ -164,8 +164,20 @@ These limitations are part of the project, not something I want to hide.
 
 This repository is a working product case study and experiment. It includes real product thinking, example queries, starter analysis code, system diagrams, frontend specifications, and an honest record of assumptions and limitations.
 
+Below is a current mobile interface prototype and UI/UX direction. Currently still in development and planning. This serves as a rough idea of how a future established app would look and feel for this intended purpose.
 
-## Sleep and Environment Extension
+
+
+<img width="478" height="1000" alt="Screenshot 2026-07-29 at 2 12 47 PM" src="https://github.com/user-attachments/assets/622b6120-28e3-4efa-b1c5-bd2730cb8fb2" />
+
+<img width="472" height="937" alt="Screenshot 2026-07-29 at 1 24 40 PM" src="https://github.com/user-attachments/assets/7af797a3-4731-4133-a59c-cbe0bf901fa4" />
+
+<img width="477" height="849" alt="Screenshot 2026-07-29 at 1 25 48 PM" src="https://github.com/user-attachments/assets/e68cb8f9-bf4f-4c4b-8792-1984c0fea45c" />
+
+<img width="472" height="895" alt="image" src="https://github.com/user-attachments/assets/4576cf11-c984-42f9-b31a-a90753d8598c" />
+
+
+## Sleep and Environment Future Extension
 
 The project also explores how sleep quality, temperature, and the physical sleep environment may affect next-day resistance-training performance.
 
