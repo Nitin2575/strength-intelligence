@@ -23,6 +23,7 @@ Strength Intelligence is organized as a living product case study. Each document
 | [AI Framework](./Technical/AI/Recommendation_Logic.md) | Recommendation logic, context design, uncertainty handling, and AI evaluation. |
 | [Research](./Research/Research/Research_Plan.md) | Supporting evidence, research questions, assumptions, and limitations. |
 | [Design](./Product/Product%20Design/Information_Architecture.md) | Interface direction, information architecture, and product interaction decisions. |
+| [System](./Technical/Systems/System_Architecture.md) | Interface direction, information architecture, and product interaction decisions. |
 
 ## Why I Built This
 
