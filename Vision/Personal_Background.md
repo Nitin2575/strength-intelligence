@@ -89,4 +89,4 @@ The broader question behind the project is:
 
 > Can AI help people understand their own strength-training data well enough to make better decisions without pretending to replace coaches, researchers, or medical professionals?
 
-Strength Intelligence MkII is my way of exploring that question in public.
+Strength Intelligence is my way of exploring that question in public.
