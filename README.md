@@ -1,6 +1,6 @@
-# Strength Intelligence MkII
+# Strength Intelligence 
 
-Strength Intelligence MkII is an **AI exploration project** focused on strength and resistance training.
+Strength Intelligence is an **AI exploration project** focused on strength and resistance training.
 
 I am building it to learn how AI, product analytics, health data, and frontend development can be used toward a real personal health goal:
 
