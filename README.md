@@ -219,4 +219,6 @@ Below is a current mobile interface prototype and UI/UX direction. Currently sti
 
 <img width="472" height="895" alt="image" src="https://github.com/user-attachments/assets/4576cf11-c984-42f9-b31a-a90753d8598c" />
 
+<img width="508" height="1015" alt="Screenshot 2026-07-30 at 5 20 54 PM" src="https://github.com/user-attachments/assets/6a815df7-2be9-4cd7-a5e2-cc203d48c776" />
+
 
