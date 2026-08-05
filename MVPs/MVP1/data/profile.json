@@ -1,0 +1,19 @@
+{
+  "goal_type": "cut",
+  "starting_weight": 155.0,
+  "target_weight": 145.0,
+  "target_rate_of_change": -0.75,
+  "calorie_target": 2200,
+  "protein_target": 170,
+  "carb_target": 210,
+  "fat_target": 76,
+  "units": {
+    "weight": "lb",
+    "rate_of_change": "lb/week"
+  },
+  "key_lifts": ["Bench Press", "Squat", "Romanian Deadlift", "Overhead Press"],
+  "session_types": {
+    "push": ["Bench Press", "Overhead Press"],
+    "legs": ["Squat", "Romanian Deadlift"]
+  }
+}

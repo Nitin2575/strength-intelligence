@@ -1,0 +1,598 @@
+{
+  "run_at": "2026-08-05T13:56:44",
+  "reasoning_path": "deterministic",
+  "model": null,
+  "data_as_of": "2026-08-05",
+  "cases_passing": 12,
+  "cases_total": 12,
+  "per_dimension": {
+    "routing": 12,
+    "groundedness": 12,
+    "numerical_accuracy": 12,
+    "appropriate_uncertainty": 12,
+    "actionability": 12
+  },
+  "results": [
+    {
+      "id": "bench_progression",
+      "question": "How is my bench progressing?",
+      "dataset": "main",
+      "reasoning_path": "deterministic",
+      "scores": {
+        "routing": {
+          "pass": true,
+          "expected_agents": [
+            "strength"
+          ],
+          "actual_agents": [
+            "strength"
+          ],
+          "expected_intent": "lift_status",
+          "actual_intent": "lift_status",
+          "focus_ok": true
+        },
+        "groundedness": {
+          "pass": true,
+          "numbers_checked": 34,
+          "ungrounded": []
+        },
+        "numerical_accuracy": {
+          "pass": true,
+          "expected": [
+            "e1rm_change_30d_pct",
+            "current_e1rm"
+          ],
+          "missing": []
+        },
+        "appropriate_uncertainty": {
+          "pass": true,
+          "issues": [],
+          "confidence": "high"
+        },
+        "actionability": {
+          "pass": true,
+          "issues": [],
+          "action": "Hold the current plan and collect two more exposures"
+        }
+      },
+      "dimensions_passed": 5,
+      "dimensions_total": 5,
+      "pass": true,
+      "answer": "Bench Press is progressing: estimated 1RM trend is +3.4% over 30 days, currently 218.8 lb from 187.5 lb x 5. The last 4 exposures have added little further progress. Recommended next step: Bench Press has flattened recently, and fueling was not examined for this question. Keep calories and training unchanged and log pre-workout nutrition for the next two sessions."
+    },
+    {
+      "id": "deficit_hurting_bench",
+      "question": "Is my deficit hurting my bench?",
+      "dataset": "main",
+      "reasoning_path": "deterministic",
+      "scores": {
+        "routing": {
+          "pass": true,
+          "expected_agents": [
+            "fueling",
+            "strength"
+          ],
+          "actual_agents": [
+            "fueling",
+            "strength"
+          ],
+          "expected_intent": "deficit_impact",
+          "actual_intent": "deficit_impact",
+          "focus_ok": true
+        },
+        "groundedness": {
+          "pass": true,
+          "numbers_checked": 54,
+          "ungrounded": []
+        },
+        "numerical_accuracy": {
+          "pass": true,
+          "expected": [
+            "e1rm_change_30d_pct",
+            "observed_rate_lb_per_week_30d",
+            "preworkout_carbs"
+          ],
+          "missing": []
+        },
+        "appropriate_uncertainty": {
+          "pass": true,
+          "issues": [],
+          "confidence": "moderate"
+        },
+        "actionability": {
+          "pass": true,
+          "issues": [],
+          "action": "Run a targeted pre-workout fueling experiment"
+        }
+      },
+      "dimensions_passed": 5,
+      "dimensions_total": 5,
+      "pass": true,
+      "answer": "Strength is progressing over the 30-day window, but Bench Press has stalled across the last 4 exposures. Most plausible contributor: Lower pre-workout carbohydrate availability is one plausible contributor to the recent Bench Press slowdown. Recommended next step: Increase pre-workout carbohydrate by approximately 30-40 g before the next two comparable Bench Press sessions, reallocating those calories from elsewhere in the day."
+    },
+    {
+      "id": "losing_weight_too_fast",
+      "question": "Am I losing weight too quickly?",
+      "dataset": "main",
+      "reasoning_path": "deterministic",
+      "scores": {
+        "routing": {
+          "pass": true,
+          "expected_agents": [
+            "fueling",
+            "strength"
+          ],
+          "actual_agents": [
+            "fueling",
+            "strength"
+          ],
+          "expected_intent": "weight_rate",
+          "actual_intent": "weight_rate",
+          "focus_ok": true
+        },
+        "groundedness": {
+          "pass": true,
+          "numbers_checked": 58,
+          "ungrounded": []
+        },
+        "numerical_accuracy": {
+          "pass": true,
+          "expected": [
+            "observed_rate_lb_per_week_30d",
+            "target_rate_lb_per_week",
+            "current_weight_7d_avg"
+          ],
+          "missing": []
+        },
+        "appropriate_uncertainty": {
+          "pass": true,
+          "issues": [],
+          "confidence": "moderate"
+        },
+        "actionability": {
+          "pass": true,
+          "issues": [],
+          "action": "Run a targeted pre-workout fueling experiment"
+        }
+      },
+      "dimensions_passed": 5,
+      "dimensions_total": 5,
+      "pass": true,
+      "answer": "No \u2014 your rate of weight change is tracking your intended rate. Observed -0.47 lb/week vs target -0.75 lb/week \u2014 within tolerance. Current 7-day average is 148.4 lb, 3.4 lb from your 145.0 lb target. Recommended next step: Increase pre-workout carbohydrate by approximately 30-40 g before the next two comparable Bench Press sessions, reallocating those calories from elsewhere in the day."
+    },
+    {
+      "id": "fueling_before_best_workouts",
+      "question": "How was my fueling before my best workouts?",
+      "dataset": "main",
+      "reasoning_path": "deterministic",
+      "scores": {
+        "routing": {
+          "pass": true,
+          "expected_agents": [
+            "fueling",
+            "strength"
+          ],
+          "actual_agents": [
+            "fueling",
+            "strength"
+          ],
+          "expected_intent": "fueling_comparison",
+          "actual_intent": "fueling_comparison",
+          "focus_ok": true
+        },
+        "groundedness": {
+          "pass": true,
+          "numbers_checked": 57,
+          "ungrounded": []
+        },
+        "numerical_accuracy": {
+          "pass": true,
+          "expected": [
+            "preworkout_carbs",
+            "higher_performing_avg",
+            "lower_performing_avg"
+          ],
+          "missing": []
+        },
+        "appropriate_uncertainty": {
+          "pass": true,
+          "issues": [],
+          "confidence": "moderate"
+        },
+        "actionability": {
+          "pass": true,
+          "issues": [],
+          "action": "Run a targeted pre-workout fueling experiment"
+        }
+      },
+      "dimensions_passed": 5,
+      "dimensions_total": 5,
+      "pass": true,
+      "answer": "Across the last 60 days, your higher-performing Bench Press sessions averaged 59.6 g of pre-workout carbohydrate versus 54.0 g on lower-performing sessions (+5.6 g). Session-level correlation is weak (r=0.26). Recommended next step: Increase pre-workout carbohydrate by approximately 30-40 g before the next two comparable Bench Press sessions, reallocating those calories from elsewhere in the day."
+    },
+    {
+      "id": "should_i_increase_calories",
+      "question": "Should I increase my calories?",
+      "dataset": "main",
+      "reasoning_path": "deterministic",
+      "scores": {
+        "routing": {
+          "pass": true,
+          "expected_agents": [
+            "fueling",
+            "strength"
+          ],
+          "actual_agents": [
+            "fueling",
+            "strength"
+          ],
+          "expected_intent": "calorie_decision",
+          "actual_intent": "calorie_decision",
+          "focus_ok": true
+        },
+        "groundedness": {
+          "pass": true,
+          "numbers_checked": 53,
+          "ungrounded": []
+        },
+        "numerical_accuracy": {
+          "pass": true,
+          "expected": [
+            "observed_rate_lb_per_week_30d",
+            "target_rate_lb_per_week",
+            "e1rm_change_30d_pct"
+          ],
+          "missing": []
+        },
+        "appropriate_uncertainty": {
+          "pass": true,
+          "issues": [],
+          "confidence": "moderate"
+        },
+        "actionability": {
+          "pass": true,
+          "issues": [],
+          "action": "Run a targeted pre-workout fueling experiment"
+        }
+      },
+      "dimensions_passed": 5,
+      "dimensions_total": 5,
+      "pass": true,
+      "answer": "Not yet, based on the current evidence. The 30-day trend is still positive and body weight is tracking to plan, so the smallest interpretable step is to redistribute existing calories rather than change the energy target. Recommended next step: Increase pre-workout carbohydrate by approximately 30-40 g before the next two comparable Bench Press sessions, reallocating those calories from elsewhere in the day."
+    },
+    {
+      "id": "why_bench_stalled_cutting",
+      "question": "I'm currently cutting. Why has my bench stalled?",
+      "dataset": "main",
+      "reasoning_path": "deterministic",
+      "scores": {
+        "routing": {
+          "pass": true,
+          "expected_agents": [
+            "fueling",
+            "strength"
+          ],
+          "actual_agents": [
+            "fueling",
+            "strength"
+          ],
+          "expected_intent": "explain_change",
+          "actual_intent": "explain_change",
+          "focus_ok": true
+        },
+        "groundedness": {
+          "pass": true,
+          "numbers_checked": 54,
+          "ungrounded": []
+        },
+        "numerical_accuracy": {
+          "pass": true,
+          "expected": [
+            "e1rm_change_30d_pct",
+            "preworkout_carbs",
+            "sleep_hours",
+            "rate_recent_lb_per_week"
+          ],
+          "missing": []
+        },
+        "appropriate_uncertainty": {
+          "pass": true,
+          "issues": [],
+          "confidence": "moderate"
+        },
+        "actionability": {
+          "pass": true,
+          "issues": [],
+          "action": "Run a targeted pre-workout fueling experiment"
+        }
+      },
+      "dimensions_passed": 5,
+      "dimensions_total": 5,
+      "pass": true,
+      "answer": "Strength is progressing over the 30-day window, but Bench Press has stalled across the last 4 exposures. Most plausible contributor: Lower pre-workout carbohydrate availability is one plausible contributor to the recent Bench Press slowdown. Recommended next step: Increase pre-workout carbohydrate by approximately 30-40 g before the next two comparable Bench Press sessions, reallocating those calories from elsewhere in the day."
+    },
+    {
+      "id": "which_lifts_fastest",
+      "question": "Which lifts are progressing the fastest?",
+      "dataset": "main",
+      "reasoning_path": "deterministic",
+      "scores": {
+        "routing": {
+          "pass": true,
+          "expected_agents": [
+            "strength"
+          ],
+          "actual_agents": [
+            "strength"
+          ],
+          "expected_intent": "lift_ranking",
+          "actual_intent": "lift_ranking",
+          "focus_ok": true
+        },
+        "groundedness": {
+          "pass": true,
+          "numbers_checked": 33,
+          "ungrounded": []
+        },
+        "numerical_accuracy": {
+          "pass": true,
+          "expected": [
+            "e1rm_change_30d_pct"
+          ],
+          "missing": []
+        },
+        "appropriate_uncertainty": {
+          "pass": true,
+          "issues": [],
+          "confidence": "high"
+        },
+        "actionability": {
+          "pass": true,
+          "issues": [],
+          "action": "Hold the current plan and collect two more exposures"
+        }
+      },
+      "dimensions_passed": 5,
+      "dimensions_total": 5,
+      "pass": true,
+      "answer": "Ranked by 30-day estimated 1RM trend: Bench Press (+3.4%), Overhead Press (+3.1%), Squat (+1.6%), Romanian Deadlift (+1.6%). Bench Press is progressing fastest. Recommended next step: Bench Press has flattened recently, and fueling was not examined for this question. Keep calories and training unchanged and log pre-workout nutrition for the next two sessions."
+    },
+    {
+      "id": "next_push_session",
+      "question": "What should I change before my next push session?",
+      "dataset": "main",
+      "reasoning_path": "deterministic",
+      "scores": {
+        "routing": {
+          "pass": true,
+          "expected_agents": [
+            "fueling",
+            "strength"
+          ],
+          "actual_agents": [
+            "fueling",
+            "strength"
+          ],
+          "expected_intent": "next_session",
+          "actual_intent": "next_session",
+          "focus_ok": true
+        },
+        "groundedness": {
+          "pass": true,
+          "numbers_checked": 55,
+          "ungrounded": []
+        },
+        "numerical_accuracy": {
+          "pass": true,
+          "expected": [
+            "preworkout_carbs"
+          ],
+          "missing": []
+        },
+        "appropriate_uncertainty": {
+          "pass": true,
+          "issues": [],
+          "confidence": "moderate"
+        },
+        "actionability": {
+          "pass": true,
+          "issues": [],
+          "action": "Run a targeted pre-workout fueling experiment"
+        }
+      },
+      "dimensions_passed": 5,
+      "dimensions_total": 5,
+      "pass": true,
+      "answer": "Increase pre-workout carbohydrate by approximately 30-40 g before the next two comparable Bench Press sessions, reallocating those calories from elsewhere in the day."
+    },
+    {
+      "id": "workouts_worse_this_week",
+      "question": "Why have my workouts been worse this week?",
+      "dataset": "main",
+      "reasoning_path": "deterministic",
+      "scores": {
+        "routing": {
+          "pass": true,
+          "expected_agents": [
+            "fueling",
+            "strength"
+          ],
+          "actual_agents": [
+            "fueling",
+            "strength"
+          ],
+          "expected_intent": "explain_change",
+          "actual_intent": "explain_change",
+          "focus_ok": true
+        },
+        "groundedness": {
+          "pass": true,
+          "numbers_checked": 54,
+          "ungrounded": []
+        },
+        "numerical_accuracy": {
+          "pass": true,
+          "expected": [
+            "session_variability_pct",
+            "e1rm_change_30d_pct"
+          ],
+          "missing": []
+        },
+        "appropriate_uncertainty": {
+          "pass": true,
+          "issues": [],
+          "confidence": "moderate"
+        },
+        "actionability": {
+          "pass": true,
+          "issues": [],
+          "action": "Run a targeted pre-workout fueling experiment"
+        }
+      },
+      "dimensions_passed": 5,
+      "dimensions_total": 5,
+      "pass": true,
+      "answer": "Strength is progressing over the 30-day window, but Bench Press has stalled across the last 4 exposures. Most plausible contributor: Lower pre-workout carbohydrate availability is one plausible contributor to the recent Bench Press slowdown. Recommended next step: Increase pre-workout carbohydrate by approximately 30-40 g before the next two comparable Bench Press sessions, reallocating those calories from elsewhere in the day."
+    },
+    {
+      "id": "protein_intake",
+      "question": "How much protein am I eating?",
+      "dataset": "main",
+      "reasoning_path": "deterministic",
+      "scores": {
+        "routing": {
+          "pass": true,
+          "expected_agents": [
+            "fueling"
+          ],
+          "actual_agents": [
+            "fueling"
+          ],
+          "expected_intent": "general",
+          "actual_intent": "general",
+          "focus_ok": true
+        },
+        "groundedness": {
+          "pass": true,
+          "numbers_checked": 52,
+          "ungrounded": []
+        },
+        "numerical_accuracy": {
+          "pass": true,
+          "expected": [
+            "avg_protein",
+            "protein_target"
+          ],
+          "missing": []
+        },
+        "appropriate_uncertainty": {
+          "pass": true,
+          "issues": [],
+          "confidence": "moderate"
+        },
+        "actionability": {
+          "pass": true,
+          "issues": [],
+          "action": "Run a targeted pre-workout fueling experiment"
+        }
+      },
+      "dimensions_passed": 5,
+      "dimensions_total": 5,
+      "pass": true,
+      "answer": "Strength is progressing over the 30-day window, but Bench Press has stalled across the last 4 exposures. Most plausible contributor: Lower pre-workout carbohydrate availability is one plausible contributor to the recent Bench Press slowdown. Recommended next step: Increase pre-workout carbohydrate by approximately 30-40 g before the next two comparable Bench Press sessions, reallocating those calories from elsewhere in the day."
+    },
+    {
+      "id": "squat_progression",
+      "question": "How is my squat progressing?",
+      "dataset": "main",
+      "reasoning_path": "deterministic",
+      "scores": {
+        "routing": {
+          "pass": true,
+          "expected_agents": [
+            "strength"
+          ],
+          "actual_agents": [
+            "strength"
+          ],
+          "expected_intent": "lift_status",
+          "actual_intent": "lift_status",
+          "focus_ok": true
+        },
+        "groundedness": {
+          "pass": true,
+          "numbers_checked": 36,
+          "ungrounded": []
+        },
+        "numerical_accuracy": {
+          "pass": true,
+          "expected": [
+            "e1rm_change_30d_pct"
+          ],
+          "missing": []
+        },
+        "appropriate_uncertainty": {
+          "pass": true,
+          "issues": [],
+          "confidence": "moderate"
+        },
+        "actionability": {
+          "pass": true,
+          "issues": [],
+          "action": "Hold the current plan and collect two more exposures"
+        }
+      },
+      "dimensions_passed": 5,
+      "dimensions_total": 5,
+      "pass": true,
+      "answer": "Squat is progressing: estimated 1RM trend is +1.6% over 30 days, currently 255.8 lb from 232.5 lb x 3. Recommended next step: Bench Press has flattened recently, and fueling was not examined for this question. Keep calories and training unchanged and log pre-workout nutrition for the next two sessions."
+    },
+    {
+      "id": "insufficient_data_guard",
+      "question": "Is my pre-workout carb intake hurting my bench?",
+      "dataset": "sparse",
+      "reasoning_path": "deterministic",
+      "scores": {
+        "routing": {
+          "pass": true,
+          "expected_agents": [
+            "fueling",
+            "strength"
+          ],
+          "actual_agents": [
+            "fueling",
+            "strength"
+          ],
+          "expected_intent": null,
+          "actual_intent": "deficit_impact",
+          "focus_ok": true
+        },
+        "groundedness": {
+          "pass": true,
+          "numbers_checked": 22,
+          "ungrounded": []
+        },
+        "numerical_accuracy": {
+          "pass": true,
+          "expected": [],
+          "missing": [],
+          "note": "No specific metrics required."
+        },
+        "appropriate_uncertainty": {
+          "pass": true,
+          "issues": [],
+          "confidence": "low"
+        },
+        "actionability": {
+          "pass": true,
+          "issues": [],
+          "action": "Keep logging \u2014 not enough data to recommend a change"
+        }
+      },
+      "dimensions_passed": 5,
+      "dimensions_total": 5,
+      "pass": true,
+      "answer": "There is not enough logged training data to characterise strength progression yet. Recommended next step: No tracked lift has enough logged exposures in the last 30 days to establish a trend. Continue logging training and pre-workout nutrition; a recommendation based on this little data would be guesswork."
+    }
+  ]
+}

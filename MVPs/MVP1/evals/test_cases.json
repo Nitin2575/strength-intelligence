@@ -1,0 +1,156 @@
+{
+  "description": "Evaluation suite for Strength Intelligence. Each case asserts on routing, grounding, numerical accuracy, appropriate uncertainty, and actionability. `important_evidence` lists metric keys the answer should be grounded in; `forbidden_phrases` catches causal overclaiming.",
+  "scoring_dimensions": [
+    "routing: were the expected agents invoked",
+    "groundedness: does every number in the response appear in the computed snapshot",
+    "numerical_accuracy: are the specific expected metrics cited",
+    "appropriate_uncertainty: is confidence within the expected set and is causal language avoided",
+    "actionability: is there a concrete next action and a reassessment trigger"
+  ],
+  "cases": [
+    {
+      "id": "bench_progression",
+      "question": "How is my bench progressing?",
+      "expected_agent": ["strength_agent"],
+      "expected_intent": "lift_status",
+      "expected_focus_lifts": ["Bench Press"],
+      "expected_behavior": "Reports the 30-day estimated 1RM trend for Bench Press and notes that recent exposures have flattened. Should not prescribe a calorie change.",
+      "important_evidence": ["e1rm_change_30d_pct", "current_e1rm"],
+      "expect_action": true,
+      "allowed_confidence": ["moderate", "high"],
+      "forbidden_phrases": ["caused by", "because of your", "proves"]
+    },
+    {
+      "id": "deficit_hurting_bench",
+      "question": "Is my deficit hurting my bench?",
+      "expected_agent": ["strength_agent", "fueling_agent"],
+      "expected_intent": "deficit_impact",
+      "expected_focus_lifts": ["Bench Press"],
+      "expected_behavior": "Runs both specialists. Reconciles the positive 30-day bench trend against the recent stall, and weighs body-weight rate against the target rate. Must use associative language, never causal.",
+      "important_evidence": ["e1rm_change_30d_pct", "observed_rate_lb_per_week_30d", "preworkout_carbs"],
+      "expect_action": true,
+      "allowed_confidence": ["low", "moderate"],
+      "forbidden_phrases": ["caused by", "is why", "proves", "definitely"]
+    },
+    {
+      "id": "losing_weight_too_fast",
+      "question": "Am I losing weight too quickly?",
+      "expected_agent": ["strength_agent", "fueling_agent"],
+      "expected_intent": "weight_rate",
+      "expected_behavior": "Answers the rate question directly by comparing the observed lb/week against the athlete's target rate, and states the verdict rather than reciting unrelated findings.",
+      "important_evidence": ["observed_rate_lb_per_week_30d", "target_rate_lb_per_week", "current_weight_7d_avg"],
+      "expect_action": true,
+      "allowed_confidence": ["low", "moderate", "high"],
+      "forbidden_phrases": ["caused by", "proves"]
+    },
+    {
+      "id": "fueling_before_best_workouts",
+      "question": "How was my fueling before my best workouts?",
+      "expected_agent": ["strength_agent", "fueling_agent"],
+      "expected_intent": "fueling_comparison",
+      "expected_behavior": "Compares pre-workout carbohydrate between higher- and lower-performing sessions, and qualifies the strength of the session-level correlation rather than implying a clean relationship.",
+      "important_evidence": ["preworkout_carbs", "higher_performing_avg", "lower_performing_avg"],
+      "expect_action": true,
+      "allowed_confidence": ["low", "moderate"],
+      "forbidden_phrases": ["caused by", "proves", "guarantees"]
+    },
+    {
+      "id": "should_i_increase_calories",
+      "question": "Should I increase my calories?",
+      "expected_agent": ["strength_agent", "fueling_agent"],
+      "expected_intent": "calorie_decision",
+      "expected_behavior": "Should NOT jump to raising calories while the 30-day trend is positive and body weight is tracking to target. Should propose the smallest supported step and name the condition under which a calorie change would be warranted.",
+      "important_evidence": ["observed_rate_lb_per_week_30d", "target_rate_lb_per_week", "e1rm_change_30d_pct"],
+      "expect_action": true,
+      "expect_smallest_intervention": true,
+      "allowed_confidence": ["low", "moderate"],
+      "forbidden_phrases": ["caused by", "proves"]
+    },
+    {
+      "id": "why_bench_stalled_cutting",
+      "question": "I'm currently cutting. Why has my bench stalled?",
+      "expected_agent": ["strength_agent", "fueling_agent"],
+      "expected_intent": "explain_change",
+      "expected_focus_lifts": ["Bench Press"],
+      "expected_behavior": "The definition-of-done case. Must produce observation, evidence, a hedged interpretation, a confidence level, a concrete next action, and a reassessment trigger. Must rule out stable inputs explicitly.",
+      "important_evidence": ["e1rm_change_30d_pct", "preworkout_carbs", "sleep_hours", "rate_recent_lb_per_week"],
+      "expect_action": true,
+      "expect_reassess": true,
+      "expect_ruled_out": true,
+      "expect_smallest_intervention": true,
+      "allowed_confidence": ["low", "moderate"],
+      "forbidden_phrases": ["caused by", "is why your", "proves", "definitely"]
+    },
+    {
+      "id": "which_lifts_fastest",
+      "question": "Which lifts are progressing the fastest?",
+      "expected_agent": ["strength_agent"],
+      "expected_intent": "lift_ranking",
+      "expected_behavior": "Ranks tracked lifts by 30-day estimated 1RM trend and names the fastest. Should not need the Fueling Agent.",
+      "important_evidence": ["e1rm_change_30d_pct"],
+      "expect_action": true,
+      "allowed_confidence": ["low", "moderate", "high"],
+      "forbidden_phrases": ["caused by", "proves"]
+    },
+    {
+      "id": "next_push_session",
+      "question": "What should I change before my next push session?",
+      "expected_agent": ["strength_agent", "fueling_agent"],
+      "expected_intent": "next_session",
+      "expected_focus_lifts": ["Bench Press", "Overhead Press"],
+      "expected_behavior": "Gives a specific, small, reversible pre-session change with a stated hold-constant set, rather than a broad plan overhaul.",
+      "important_evidence": ["preworkout_carbs"],
+      "expect_action": true,
+      "expect_smallest_intervention": true,
+      "allowed_confidence": ["low", "moderate"],
+      "forbidden_phrases": ["caused by", "proves"]
+    },
+    {
+      "id": "workouts_worse_this_week",
+      "question": "Why have my workouts been worse this week?",
+      "expected_agent": ["strength_agent", "fueling_agent"],
+      "expected_intent": "explain_change",
+      "expected_behavior": "Distinguishes normal variability from a real trend change. Should not treat a single week as a confirmed decline, and should cite session variability.",
+      "important_evidence": ["session_variability_pct", "e1rm_change_30d_pct"],
+      "expect_action": true,
+      "allowed_confidence": ["low", "moderate"],
+      "forbidden_phrases": ["caused by", "proves", "definitely"]
+    },
+    {
+      "id": "protein_intake",
+      "question": "How much protein am I eating?",
+      "expected_agent": ["fueling_agent"],
+      "expected_intent": "general",
+      "expected_behavior": "Reports average protein against target and adherence. Purely a fueling question; the Strength Agent is not required.",
+      "important_evidence": ["avg_protein", "protein_target"],
+      "expect_action": false,
+      "allowed_confidence": ["low", "moderate", "high"],
+      "forbidden_phrases": ["caused by", "proves"]
+    },
+    {
+      "id": "squat_progression",
+      "question": "How is my squat progressing?",
+      "expected_agent": ["strength_agent"],
+      "expected_intent": "lift_status",
+      "expected_focus_lifts": ["Squat"],
+      "expected_behavior": "Reports the squat trend. Because the squat is trained once a week, it has too few recent exposures to judge a stall, and the response should reflect that limitation rather than asserting one.",
+      "important_evidence": ["e1rm_change_30d_pct"],
+      "expect_action": true,
+      "allowed_confidence": ["low", "moderate"],
+      "forbidden_phrases": ["caused by", "proves"]
+    },
+    {
+      "id": "insufficient_data_guard",
+      "question": "Is my pre-workout carb intake hurting my bench?",
+      "dataset": "sparse",
+      "expected_agent": ["strength_agent", "fueling_agent"],
+      "expected_behavior": "Against a deliberately sparse dataset the system must refuse to explain. It should state that evidence is insufficient, name what needs collecting, and NOT recommend a calorie or training change.",
+      "important_evidence": [],
+      "expect_action": true,
+      "expect_insufficient_evidence": true,
+      "expect_no_intervention": true,
+      "allowed_confidence": ["low"],
+      "forbidden_phrases": ["caused by", "proves", "increase your calories", "raise the calorie target"]
+    }
+  ]
+}
