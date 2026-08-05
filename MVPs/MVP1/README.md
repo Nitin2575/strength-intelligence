@@ -1,7 +1,5 @@
 # Strength Intelligence
 
-**A Helyx Labs Project**
-
 Strength Intelligence is an agentic AI system designed to understand how training,
 fueling, body weight, and recovery context interact with strength progression.
 
