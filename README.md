@@ -6,6 +6,8 @@ I am building it to learn how AI, product analytics, health data, and frontend d
 
 > Understanding what helps me train better, recover better, and make more informed strength-training decisions.
 
+[Updated Overview](./Vision/UpdatedOverview.md)
+
 This is not presented as a finished medical product, a validated coaching system, or a replacement for professional guidance. It is a transparent experiment in applying AI and data analysis to a problem I genuinely care about.
 
 ## Repository Guide
