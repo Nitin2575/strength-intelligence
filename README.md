@@ -1,14 +1,19 @@
 # Strength Intelligence 
 
-Strength Intelligence is an **AI exploration project** focused on strength and resistance training.
-
+A focused AI health-product exploration for understanding how training, fueling, recovery, and body-weight trends influence strength progression.
 I am building it to learn how AI, product analytics, health data, and frontend development can be used toward a real personal health goal:
 
 > Understanding what helps me train better, recover better, and make more informed strength-training decisions.
 
-[Updated Overview](./Vision/UpdatedOverview.md)
+Explore: [Updated Overview](./Vision/UpdatedOverview.md)
 
 This is not presented as a finished medical product, a validated coaching system, or a replacement for professional guidance. It is a transparent experiment in applying AI and data analysis to a problem I genuinely care about.
+
+<img width="250" height="500" alt="Screenshot 2026-07-29 at 2 12 47 PM" src="https://github.com/user-attachments/assets/622b6120-28e3-4efa-b1c5-bd2730cb8fb2" />
+
+<img width="250" height="500" alt="Screenshot 2026-07-29 at 1 24 40 PM" src="https://github.com/user-attachments/assets/7af797a3-4731-4133-a59c-cbe0bf901fa4" />
+
+Current status: Product concept and interactive UI prototype. The measurement system, data architecture, recommendation logic, and AI guardrails are being developed and tested.
 
 ## Repository Guide
 
@@ -213,9 +218,7 @@ Below is a current mobile interface prototype and UI/UX direction. Currently sti
 
 
 
-<img width="478" height="1000" alt="Screenshot 2026-07-29 at 2 12 47 PM" src="https://github.com/user-attachments/assets/622b6120-28e3-4efa-b1c5-bd2730cb8fb2" />
 
-<img width="472" height="937" alt="Screenshot 2026-07-29 at 1 24 40 PM" src="https://github.com/user-attachments/assets/7af797a3-4731-4133-a59c-cbe0bf901fa4" />
 
 <img width="477" height="849" alt="Screenshot 2026-07-29 at 1 25 48 PM" src="https://github.com/user-attachments/assets/e68cb8f9-bf4f-4c4b-8792-1984c0fea45c" />
 
